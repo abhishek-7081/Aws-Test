@@ -27,3 +27,4 @@ const LoadingSpinner = ({ message = 'Loading...', size = 'default', fullPage = f
 };
 
 export default LoadingSpinner;
+

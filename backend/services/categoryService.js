@@ -207,3 +207,4 @@ module.exports = {
   categoryService: new CategoryService(),
   inMemoryCategories,
 };
+

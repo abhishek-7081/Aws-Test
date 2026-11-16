@@ -184,3 +184,4 @@ const CategoryModal = ({ isOpen, onClose, onSubmit, initialCategory = null, isSu
 };
 
 export default CategoryModal;
+

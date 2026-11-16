@@ -9,3 +9,4 @@ router.use(protect);
 router.get('/stats', getStats);
 
 module.exports = router;
+

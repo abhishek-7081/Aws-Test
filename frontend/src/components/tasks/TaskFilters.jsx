@@ -114,3 +114,4 @@ const TaskFilters = ({ filters, onFilterChange, categories = [], onReset }) => {
 };
 
 export default TaskFilters;
+

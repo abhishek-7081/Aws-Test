@@ -23,3 +23,4 @@ router.route('/:id')
   .delete(deleteCategory);
 
 module.exports = router;
+

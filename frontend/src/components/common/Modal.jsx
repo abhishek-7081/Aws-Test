@@ -46,3 +46,4 @@ const Modal = ({ isOpen, onClose, title, children, footer, maxWidth = '540px' })
 };
 
 export default Modal;
+

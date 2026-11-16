@@ -16,3 +16,4 @@ const getStats = asyncHandler(async (req, res) => {
 module.exports = {
   getStats,
 };
+
