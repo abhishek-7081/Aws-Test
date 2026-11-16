@@ -8,9 +8,6 @@ const PORT = parseInt(process.env.PORT, 10) || 5000;
 // Initialize server function
 const startServer = async () => {
   try {
-    // Attempt database connection
-    await connectDB();
-
     const server = http.createServer(app);
 
     server.listen(PORT, () => {
@@ -20,6 +17,11 @@ const startServer = async () => {
       console.log(`🩺 Health check: http://localhost:${PORT}/api/health`);
       console.log(`⚙️  Environment: ${process.env.NODE_ENV || 'development'}`);
       console.log(`===============================================`);
+    });
+
+    // Connect to database in the background
+    connectDB().catch((err) => {
+      console.warn(`[Database] Initial connection attempt: ${err.message}`);
     });
 
     // Handle unhandled promise rejections
